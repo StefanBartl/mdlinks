@@ -1,3 +1,4 @@
+---@meta
 ---@module 'mdlinks.types.aliases'
 --- Public-facing aliases, kept separate to reduce noise in source files.
 

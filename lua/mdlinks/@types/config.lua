@@ -1,3 +1,4 @@
+---@meta
 ---@module 'mdlinks.core.types.config'
 
 ---@class MdlinksConfig

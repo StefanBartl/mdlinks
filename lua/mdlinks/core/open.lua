@@ -1,11 +1,8 @@
 ---@module 'mdlinks.core.open'
+
 local M = {}
 
-local function platform()
-  if vim.fn.has("win32") == 1 or vim.fn.has("win64") == 1 then return "windows" end
-  if vim.fn.has("mac") == 1 then return "mac" end
-  return "linux"
-end
+local helper = require("mdlinks.utils.helper")
 
 ---@param argv string[]
 ---@return boolean, string|nil
@@ -24,7 +21,7 @@ end
 ---@return boolean, string|nil
 function M.open_url(url)
   -- If you have user-configurable open_url_cmd, normalize & use it here.
-  local pf = platform()
+  local pf = helper.get_platform()
   if pf == "windows" then
     return job_detached({ "cmd.exe", "/c", "start", "", url })
   elseif pf == "mac" then
@@ -52,7 +49,7 @@ function M.open_path(path)
     end
     return true
   end
-  local pf = platform()
+  local pf = helper.get_platform()
   if pf == "windows" then
     return job_detached({ "cmd.exe", "/c", "start", "", path })
   elseif pf == "mac" then

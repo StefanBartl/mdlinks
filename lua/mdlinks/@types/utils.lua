@@ -1,3 +1,4 @@
+---@meta
 ---@module 'mdlinks.utils.types.util_types'
 --- Utility-specific type aliases.
 

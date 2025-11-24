@@ -6,9 +6,9 @@ local M = {}
 
 ---@type MdlinksConfig
 local Defaults = {
-	keymap = "gm",
+	keymap = "ml",
 	footnote_backref_key = nil,
-	open_cmd = nil, -- nil → platform default
+    open_cmd = nil, -- nil → platform default
 	open_url_cmd = nil, -- nil → platform default
 	anchor_levels = { 1, 2, 3, 4, 5, 6 },
 	debug = false,

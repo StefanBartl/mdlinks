@@ -1,3 +1,4 @@
+---@meta
 ---@module 'mdlinks.core.types.core_types'
 --- Shared core types for mdlinks.
 
@@ -15,3 +16,10 @@
 ---@class FollowOutcome
 ---@field ok boolean
 ---@field err string|nil
+
+---@class Resolved
+---@field kind "url"|"file"|"image"|"heading"
+---@field url? string
+---@field path? string
+---@field heading? { level: integer, text: string }
+

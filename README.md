@@ -15,10 +15,10 @@ _|    _|    _|    _|_|_|  _|  _|  _|    _|  _|    _|  _|_|_|
 
 A tiny, robust Neovim plugin to **follow Markdown entities** under (or near) your cursor:
 
-* Standard links `[label](http://…)`
-* Local files (PDFs, images, any path)
-* Headings / anchors (`[go](#my-heading)`, `[go](## My Heading)`)
-* Line-fallback: if no link is *exactly* under the cursor, it picks the **nearest** link on that line.
+ Standard links `[label](http://…)`
+ Local files (PDFs, images, any path)
+ Headings / anchors (`[go](#my-heading)`, `[go](## My Heading)`)
+ Line-fallback: if no link is *exactly* under the cursor, it picks the **nearest** link on that line.
 
 ---
 
@@ -26,11 +26,9 @@ A tiny, robust Neovim plugin to **follow Markdown entities** under (or near) you
 * [Installation (with Lazy.nvim)](#installation-with-lazynvim)
 * [Dependencies](#dependencies)
 * [Configuration](#configuration)
-
   * [Config reference](#config-reference)
   * [Windows/WSL notes](#windowswsl-notes)
 * [Usage](#usage)
-
   * [Commands](#commands)
   * [Keymaps](#keymaps)
   * [Behavior details](#behavior-details)

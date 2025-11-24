@@ -1,4 +1,5 @@
 ---@module 'mdlinks.core.nav'
+
 local Parser = require("mdlinks.core.parser")
 local Resolve = require("mdlinks.core.resolve")
 local Open = require("mdlinks.core.open")

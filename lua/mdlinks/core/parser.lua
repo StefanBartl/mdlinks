@@ -1,15 +1,6 @@
 ---@module 'mdlinks.parser'
+
 local M = {}
-
----@class MdLink
----@field raw string
----@field text string
----@field target string
----@field kind  "url"|"file"|"image"|"heading"
-
----@class MdLinkHit : MdLink
----@field s integer  -- 1-based start col (inclusive)
----@field e integer  -- 1-based end col (inclusive)
 
 ---@param line string
 ---@return MdLinkHit[]  -- all links found in line, with their ranges
@@ -21,7 +12,6 @@ function M.links_in_line(line)
     local s1, e1, label, target = line:find("%[([^%]]+)%]%(([^)]+)%)", i)
     if not s1 then break end
 
-    -- Reuse your kind classifier from link_under_cursor:
     local lower = target:lower()
     local function is_url(s) return s:match("^%a[%w+.-]*://") ~= nil end
     local function is_heading(s) return s:match("^%s*#+") ~= nil end
