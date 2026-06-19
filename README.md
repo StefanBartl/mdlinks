@@ -64,10 +64,10 @@ A tiny, robust Neovim plugin to **follow Markdown entities** under (or near) you
 
 ```lua
 {
-  "StefanBartl/mdlinks.nvim",
+  "StefanBartl/mdlinks",
   lazy = false, -- recommended so the command is always available
   config = function()
-    require("mdlinks").setup({
+    require("mdlinks.config").setup({
       -- all fields are optional; see “Configuration” below
       -- keymap = "gx",
       -- debug = true,
