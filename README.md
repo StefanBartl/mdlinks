@@ -1,4 +1,10 @@
 # mdlinks.nvim
+
+> [!WARNING]
+> **This plugin is DEPRECATED.** > `mdlinks` has been merged into and succeeded by [markdown.nvim](https://github.com/StefanBartl/markdown.nvim). 
+> No new features or bugfixes will be deployed here. Please migrate to the new plugin for enhanced features and active support.
+A tiny, robust Neovim plugin to **follow Markdown entities** under (or near) your cursor:
+
 ```sh
                       _|  _|  _|            _|
 _|_|_|  _|_|      _|_|_|  _|      _|_|_|    _|  _|      _|_|_|
@@ -12,8 +18,6 @@ _|    _|    _|    _|_|_|  _|  _|  _|    _|  _|    _|  _|_|_|
 ![Lazy.nvim compatible](https://img.shields.io/badge/lazy.nvim-supported-success)
 ![Neovim](https://img.shields.io/badge/Neovim-0.9+-success.svg)
 ![Lua](https://img.shields.io/badge/language-Lua-yellow.svg)
-
-A tiny, robust Neovim plugin to **follow Markdown entities** under (or near) your cursor:
 
  Standard links `[label](http://…)`
  Local files (PDFs, images, any path)
